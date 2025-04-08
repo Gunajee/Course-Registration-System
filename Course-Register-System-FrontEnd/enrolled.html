@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="myscript.js"></script>
+    <style>
+      td {
+        background-color: aliceblue;
+      }
+      body {
+        padding: 50px;
+        align-items: center;
+        text-align: center;
+      }
+      #back {
+        text-align: center;
+        width: 100px;
+        height: 50px;
+      }
+      button {
+        background-color: lemonchiffon;
+        font-weight: 600;
+        font-size: large;
+      }
+      button:hover {
+        background-color: rgb(166, 237, 158);
+      }
+    </style>
+    <title>Enrollled Courses</title>
+  </head>
+  <body>
+    <h1>Enrolled Courses</h1>
+    <table align="center" border="1px" style="background-color: black">
+      <tr align="center" style="background-color: lightblue">
+        <th width="150px">Name</th>
+        <th width="200px">Email Id</th>
+        <th width="200px">Course Name</th>
+      </tr>
+      <tbody align="center" id="enrolledtable"></tbody>
+    </table>
+    <br /><br />
+    <a href="index.html"><button id="back">Go back</button></a>
+    <script type="text/javascript">
+      window.onload = function () {
+        showEnrolledStudents();
+      };
+    </script>
+  </body>
+</html>

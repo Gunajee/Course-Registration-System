@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="myscript.js"></script>
+    <style>
+      td {
+        background-color: aliceblue;
+      }
+      body {
+        padding: 50px;
+        text-align: center;
+      }
+      #back {
+        text-align: center;
+        width: 100px;
+        height: 50px;
+      }
+      button {
+        background-color: lemonchiffon;
+        font-weight: 600;
+        font-size: large;
+      }
+      button:hover {
+        background-color: rgb(166, 237, 158);
+      }
+    </style>
+    <title>Available Courses</title>
+  </head>
+  <body>
+    <h1>Available Courses</h1>
+    <table align="center" border="1px" style="background-color: black">
+      <tr align="center" style="background-color: lightblue">
+        <th width="100px">Course Id</th>
+        <th width="150px">Course Name</th>
+        <th width="150px">Trainer</th>
+        <th width="100px">Duration in weeks</th>
+      </tr>
+      <tbody align="center" id="coursetable"></tbody>
+      <!--  table body where rows will be inserted-->
+    </table>
+    <br /><br />
+    <a href="index.html"><button id="back">Go back</button></a>
+    <script type="text/javascript">
+      window.onload = function () {
+        showCourses();
+      };
+    </script>
+  </body>
+</html>
